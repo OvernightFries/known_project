@@ -24,13 +24,16 @@ export const WorkWithUs = () => {
               placeholder="Say anything..."
               className="input-field large-textarea"
               rows="4"
-            ></textarea>
-            <button
-              type="submit"
-              className="submit-btn"
             >
-              Send Message
-            </button>
+            </textarea>
+            <div className="text-center">
+              <button
+                type="submit"
+                className="submit-btn"
+              >
+                Send Message
+              </button>
+            </div>
           </form>
         </div>
       </div>

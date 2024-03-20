@@ -1,28 +1,35 @@
+/* Base styles */
 .section {
   margin-bottom: 10px;
-
 }
 
-.gray-line {
+.gray-line, .gray-line2 {
   border-top: 2px solid #ccc;
   margin-top: 45px;
-    width: 72rem;
-
+  margin-bottom: 30px; /* Adjusted for .gray-line2 */
+  width: 67%; /* Make it responsive */
+  max-width: 72rem; /* Maximum width */
   margin-left: auto;
   margin-right: auto;
 }
 
-.gray-line2 {
-  border-top: 2px solid #ccc;
-  margin-bottom: 30px;
-  width: 72rem;
-  margin-left: auto;
-    margin-right: auto;
-}
-
 .search-logo {
-  height: 30px; /* Example height, adjust as needed */
-  margin-right: 10px; /* Adds some space between the logo and the text */
+  height: 30px;
+  margin-right: 10px;
 }
 
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .text-xl {
+    font-size: 1rem;
+  }
+
+  .container {
+    padding: 0 20px;
+  }
+
+  .gray-line, .gray-line2 {
+    width: calc(100% - 40px);
+  }
+}
 

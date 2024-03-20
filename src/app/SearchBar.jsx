@@ -1,5 +1,5 @@
 "use client"
-import React, { useRef, useEffect } from "react";
+import React, { useRef, useEffect, useState } from "react";
 import "./SearchBar.css";
 import "./Font.css";
 import "./Section1.css"
@@ -20,41 +20,47 @@ import "./Section1.css"
 
 export const SearchBar = () => {
   const placeholder = "What jeans should I buy?";
-  const placeholderRef = useRef("");
-  const [typedText, setTypedText] = React.useState("");
+  const [typedText, setTypedText] = useState("");
 
-  useEffect(() => {
-    const intervalId = setInterval(() => {
-      placeholderRef.current += placeholder[placeholderRef.current.length];
-      setTypedText(placeholderRef.current);
-      if (placeholderRef.current.length === placeholder.length) {
-        clearInterval(intervalId);
-      }
-    }, 150);
-
-    return () => clearInterval(intervalId);
-  }, []);
+ useEffect(() => {
+    if (typedText.length < placeholder.length) {
+      const timeoutId = setTimeout(() => {
+        setTypedText(placeholder.slice(0, typedText.length + 1));
+      }, 150);
+      return () => clearTimeout(timeoutId);
+    }
+  }, [typedText, placeholder]);
 
   return (
     <section id="banner" className="title-padder">
       <h1 className="header-title custom-font max-w-screen-lg">
-        A search engine that helps humans make decisions
-        <div className="rainbow-line"> </div>
+        <span>A search engine that</span>
+        <span className="line-spacing">helps humans make decisions</span>
+        <div className="rainbow-line"></div>
       </h1>
       <div className="search-bar-container">
-<div className="search-bar">
-
-   <span className="search-input custom-font-italicized">{typedText}</span>
-  <div className="typing-cursor"></div>
-</div>
-
-
-      </div>
-      <div className="use-client custom-font">
+        <div className="search-bar">
+          <div className="search-logo">
+            <Image
+              src={logo}
+              alt="Logo"
+              width={60}
+              height={60}
+              objectFit="contain"
+            />
+          </div>
+          <input
+            type="text"
+            className="search-input custom-font-italicized"
+            value={typedText}
+            onChange={(e) => setTypedText(e.target.value)}
+            placeholder={placeholder}
+          />
+          <div className="typing-cursor"></div>
+        </div>
       </div>
     </section>
   );
-
 };
 
-export default SearchBar;
+export default SearchBar;;

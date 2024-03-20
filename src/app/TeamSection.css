@@ -1,7 +1,6 @@
 .team-section {
   background-color: white;
   text-align: center;
-  padding: 1.5rem 0;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -43,17 +42,17 @@
   display: grid;
   grid-template-columns: auto 1fr;
   align-items: center;
-  gap: 2rem; /* Space between the image and the text */
+  gap: 2rem;
   width: 100%;
-  max-width: 1200px; /* Set a max-width if needed */
-  margin: auto; /* Center the grid if within a constrained width */
+  max-width: 1200px;
+  margin: auto;
 }
 
 .advisory-member {
   display: grid;
-  grid-template-columns: auto 1fr; /* Image on the left, text on the right */
-  gap: 2rem; /* Space between image and text */
-  align-items: center; /* Center items vertically */
+  grid-template-columns: auto 1fr;
+  gap: 2rem;
+  align-items: center;
   margin-bottom: 0.1rem;
 }
 
@@ -68,7 +67,7 @@
 }
 
 .advisory-member-image {
-  border-radius: 50%; /* Make the image circular */
+  border-radius: 50%;
   width: 300px;
   height: 300px;
   object-fit: cover;
@@ -97,7 +96,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-top: 10px; /* Adds space above the search bar */
+  margin-top: 10px;
 }
 
 .mini-search-input {
@@ -113,14 +112,13 @@
   animation: blink 1s steps(5, start) infinite;
 }
 
-/* Blink animation for the cursor */
 @keyframes blink {
   from, to { background-color: transparent; }
   50% { background-color: black; }
 }
 
 .advisory-member-details {
-  text-align: left; /* Text aligned to the left */
+  text-align: left;
 }
 
 .advisory-text-blob {
@@ -143,5 +141,9 @@
 
   .advisory-member-details {
     text-align: center;
+  }
+
+  .advisory-text-blob{
+  font-size: 0.7rem;
   }
 }

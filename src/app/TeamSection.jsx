@@ -108,34 +108,34 @@ export const TeamSection = () => {
         </div>
       </section>
 
-      <section id="advisory-board" className="advisory-board-section">
-        <div className="container">
-          <h2 className="section-title"> Advisory Board</h2>
-          <div className="advisory-members">
-            <div className="advisory-member">
-              <div className="team-member-image">
-                <Image
-                  src={tim}
-                  alt="Tim"
-                  width={200}
-                  height={200}
-                />
-              </div>
-              <div className="advisory-member-details">
-                <h3 className="advisory-member-name">Tim Armstrong</h3>
-                <p className="team-member-role"> Chief Advisor</p>
-                <div className="advisory-text-blob custom-font-tim">
-                                  The largest AI and Search Models don’t serve users objective information about what the best products and services are. This screws over humans trying to make decisions and brands trying to grow online. Known Human is changing the way search and AI chat works by serving only objective information.
-                </div>
+{/*       <section id="advisory-board" className="advisory-board-section"> */}
+{/*         <div className="container"> */}
+{/*           <h2 className="section-title"> Advisory Board</h2> */}
+{/*           <div className="advisory-members"> */}
+{/*             <div className="advisory-member"> */}
+{/*               <div className="team-member-image"> */}
+{/*                 <Image */}
+{/*                   src={tim} */}
+{/*                   alt="Tim" */}
+{/*                   width={200} */}
+{/*                   height={200} */}
+{/*                 /> */}
+{/*               </div> */}
+{/*               <div className="advisory-member-details"> */}
+{/*                 <h3 className="advisory-member-name">Tim Armstrong</h3> */}
+{/*                 <p className="team-member-role"> Chief Advisor</p> */}
+{/*                 <div className="advisory-text-blob custom-font-tim"> */}
+{/*                                   The largest AI and Search Models don’t serve users objective information about what the best products and services are. This screws over humans trying to make decisions and brands trying to grow online. Known Human is changing the way search and AI chat works by serving only objective information. */}
+{/*                 </div> */}
 
-              </div>
+{/*               </div> */}
 
-            </div>
-          </div>
-        </div>
-        <div className="gray-line">
-                </div>
-      </section>
+{/*             </div> */}
+{/*           </div> */}
+{/*         </div> */}
+{/*         <div className="gray-line"> */}
+{/*                 </div> */}
+{/*       </section> */}
 
     </div>
   );

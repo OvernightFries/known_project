@@ -3,7 +3,7 @@
   padding-bottom: 3.65rem;
   background-color: white;
   text-align: center;
-  height: 100vh; /* Set height to 100% of viewport height */
+  height: 100vh;
 }
 
 .header-title {
@@ -12,7 +12,7 @@
   text-align: center;
   justify-content: center;
   position: relative;
-  margin-bottom: 1rem; /* Increase or adjust this value for more space below the title */
+  margin-bottom: 1rem;
 }
 
 .rainbow-line {

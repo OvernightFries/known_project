@@ -1,6 +1,7 @@
 import React from 'react';
 import Image from 'next/Image'
 import myLogo from './known_logo.png';
+import './Header.css'
 import './Font.css'
 console.log(myLogo);
 
@@ -23,7 +24,6 @@ export const Header = () => {
           <nav>
             <ul className="flex">
               <li className="mr-6"><a href="#" className="text-black">Team</a></li>
-              <li className="mr-6"><a href="#" className="text-black">Research</a></li>
               <li className="mr-6"><a href="#" className="text-black">Work With Us</a></li>
             </ul>
           </nav>

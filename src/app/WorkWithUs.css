@@ -3,8 +3,8 @@
 }
 
 .py-12 {
-  padding-top: 1rem; /* 12px */
-  padding-bottom: 3rem; /* 12px */
+  padding-top: 1rem;
+  padding-bottom: 3rem;
 }
 
 .container {
@@ -43,16 +43,14 @@
 }
 
 .name-email {
-  grid-column: span 1; /* Each takes up one column */
+  grid-column: span 1;
   height: 60px;
 }
 
 .large-textarea {
-  grid-column: 1 / -1; /* Spans both columns */
+  grid-column: 1 / -1;
   height: 150px;
-
 }
-
 
 .grid-cols-1 {
   grid-template-columns: repeat(1, minmax(0, 1fr));
@@ -65,8 +63,8 @@
 .input-field {
   width: 100%;
   padding: 1rem 1rem;
-    border: 2px solid #ddd;
-    border-radius: 1.1rem;
+  border: 2px solid #ddd;
+  border-radius: 1.1rem;
   outline: none;
 }
 
@@ -77,14 +75,21 @@
 }
 
 .submit-btn {
-  width: 100%;
-  background-color: black; /* indigo-500 */
+  background-color: black;
+  width: 55%;
   color: white;
-  padding: 0.5rem 1rem;
-  border-radius: 0.375rem; /* rounded-lg */
-  cursor: pointer;
-
+  padding: 0.5rem 0;
+  border-radius: 0.375rem;
+  width: 30%;
+  margin: 0;
 }
+
+.form-grid div.text-center {
+  grid-column: 1 / -1; /* This makes sure the div spans all columns */
+  display: flex; /* Use flexbox for centering */
+  justify-content: center; /* Horizontally center the content */
+}
+
 
 .submit-btn:hover {
   background-color: #4f46e5; /* indigo-600 */
