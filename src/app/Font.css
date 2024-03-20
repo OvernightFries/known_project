@@ -1,0 +1,36 @@
+.custom-font {
+  font-family: "basco-std", serif;
+  font-weight: 300;
+  font-style: light;
+  font-size: 5rem;
+  color: black;
+}
+
+.custom-font-n2 {
+  font-family: "basco-std", serif;
+  font-weight: 400;
+  font-style: bold;
+  font-size: 2rem;
+}
+
+.custom-font-italicized{
+  font-family: "basco-std", serif;
+  font-weight: 400;
+  font-style: italicized;
+  font-size: 3rem;
+}
+
+.custom-font-light{
+  font-family: "basco-std", serif;
+  font-weight: 200;
+  font-style: light;
+}
+
+.custom-font-tim{
+  font-family: "basco-std", serif;
+  font-weight: 100;
+  font-style: light;
+  font-size: 1.5rem;
+}
+
+

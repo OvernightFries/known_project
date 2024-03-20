@@ -1,0 +1,28 @@
+.section {
+  margin-bottom: 10px;
+
+}
+
+.gray-line {
+  border-top: 2px solid #ccc;
+  margin-top: 45px;
+    width: 72rem;
+
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.gray-line2 {
+  border-top: 2px solid #ccc;
+  margin-bottom: 30px;
+  width: 72rem;
+  margin-left: auto;
+    margin-right: auto;
+}
+
+.search-logo {
+  height: 30px; /* Example height, adjust as needed */
+  margin-right: 10px; /* Adds some space between the logo and the text */
+}
+
+

@@ -1,0 +1,147 @@
+.team-section {
+  background-color: white;
+  text-align: center;
+  padding: 1.5rem 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.advisory-board-section {
+  background-color: white;
+  text-align: center;
+  padding: 1.5rem 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.section-title {
+  font-size: 2.5rem;
+  color: black;
+  margin-bottom: 2rem;
+}
+
+.team-members {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2.1rem;
+}
+
+.team-member {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+.advisory-members {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  align-items: center;
+  gap: 2rem; /* Space between the image and the text */
+  width: 100%;
+  max-width: 1200px; /* Set a max-width if needed */
+  margin: auto; /* Center the grid if within a constrained width */
+}
+
+.advisory-member {
+  display: grid;
+  grid-template-columns: auto 1fr; /* Image on the left, text on the right */
+  gap: 2rem; /* Space between image and text */
+  align-items: center; /* Center items vertically */
+  margin-bottom: 0.1rem;
+}
+
+.team-member-details {
+  margin-top: 1rem;
+}
+
+.team-member img {
+  border-radius: 50%;
+  max-width: 80%;
+  height: auto;
+}
+
+.advisory-member-image {
+  border-radius: 50%; /* Make the image circular */
+  width: 300px;
+  height: 300px;
+  object-fit: cover;
+}
+
+
+
+.team-member-name {
+  font-size: 1.5rem;
+  color: black;
+}
+
+.advisory-member-name {
+  font-size: 2rem;
+  color: black;
+}
+
+.team-member-role, .advisory-member-role {
+  font-size: 1rem;
+  color: #555;
+}
+
+
+
+.mini-search-bar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 10px; /* Adds space above the search bar */
+}
+
+.mini-search-input {
+  font-size: 1rem;
+  padding: 5px;
+  margin-right: 10px;
+}
+
+
+.mini-typing-cursor {
+  width: 1px;
+  height: 14px;
+  animation: blink 1s steps(5, start) infinite;
+}
+
+/* Blink animation for the cursor */
+@keyframes blink {
+  from, to { background-color: transparent; }
+  50% { background-color: black; }
+}
+
+.advisory-member-details {
+  text-align: left; /* Text aligned to the left */
+}
+
+.advisory-text-blob {
+  padding: 10px;
+  border-radius: 5px;
+}
+
+@media (max-width: 768px) {
+  .advisory-member {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .advisory-member-image {
+    width: 200px;
+    height: 200px;
+    margin-right: 0;
+    margin-bottom: 1rem;
+  }
+
+  .advisory-member-details {
+    text-align: center;
+  }
+}

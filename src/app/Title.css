@@ -1,0 +1,34 @@
+.title-padder {
+  padding-top: 9.5rem;
+  padding-bottom: 3.65rem;
+  background-color: white;
+  text-align: center;
+  height: 100vh; /* Set height to 100% of viewport height */
+}
+
+.header-title {
+  font-size: 5rem;
+  color: black;
+  text-align: center;
+  justify-content: center;
+  position: relative;
+  margin-bottom: 1rem; /* Increase or adjust this value for more space below the title */
+}
+
+.rainbow-line {
+  position: absolute;
+  left: 50%;
+  margin-top: 1rem;
+  transform: translateX(-50%);
+  bottom: 0;
+  width: 85%;
+  height: 3px;
+  background: linear-gradient(to right,
+              red,
+              orange,
+              yellow,
+              green,
+              blue,
+              indigo,
+              violet);
+}

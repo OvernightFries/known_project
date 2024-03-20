@@ -1,0 +1,22 @@
+.mini-search-bar {
+  margin-top: 10px;
+  border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 3px;
+}
+
+.mini-search-input {
+  font-size: 0.8rem;
+  border: none;
+}
+
+.mini-typing-cursor {
+  height: 14px;
+  width: 2px;
+  animation: blink 1s steps(5, start) infinite;
+}
+
+@keyframes blink {
+  from, to { background-color: transparent }
+  50% { background-color: black; }
+}
