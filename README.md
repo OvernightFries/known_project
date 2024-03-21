@@ -1,15 +1,3 @@
-# 🚀 Welcome to your new awesome project!
+Author: Kai Lam Kingsle U
 
-This project has been created using **webpack-cli**, you can now run
-
-```
-npm run build
-```
-
-or
-
-```
-yarn build
-```
-
-to bundle your application
+This is a project I've been working on (V1 Website) for the Known Human Startup. 
